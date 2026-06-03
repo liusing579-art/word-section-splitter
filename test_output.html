@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root {
+  --page-bg: #fdf8f0;
+  --text-color: #3d3226;
+  --heading-color: #5c3d1a;
+  --accent: #8b4513;
+  --accent-light: #c4a97d;
+  --table-border: #3d3226;
+  --table-header-bg: #f0e6d3;
+  --table-stripe: #faf5ed;
+  --details-bg: #fdf6e8;
+  --details-border: #c4a97d;
+  --details-summary-bg: #f5ecd7;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--page-bg);
+  color: var(--text-color);
+  font-family: "Noto Serif SC", "Source Han Serif SC", "SimSun", "Songti SC", serif;
+  font-size: 16px;
+  line-height: 1.9;
+  padding: 40px 24px 60px;
+  max-width: 820px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.book-content {
+  background: #fffef9;
+  border: 1px solid #e0d5c0;
+  border-radius: 4px;
+  padding: 48px 40px;
+  box-shadow: 0 2px 16px rgba(61, 50, 38, 0.08);
+}
+
+@media (max-width: 640px) {
+  body { padding: 12px; }
+  .book-content { padding: 24px 16px; }
+}
+
+.book-content h2, .book-content .section-title {
+  font-size: 1.6em;
+  color: var(--heading-color);
+  margin: 32px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent-light);
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.book-content h3, .book-content .sub-section-title {
+  font-size: 1.25em;
+  color: var(--heading-color);
+  margin: 28px 0 16px;
+  font-weight: 700;
+}
+.book-content h4, .book-content h5, .book-content h6 {
+  font-size: 1.1em;
+  color: var(--heading-color);
+  margin: 20px 0 12px;
+  font-weight: 600;
+}
+
+.book-content p {
+  margin: 0 0 14px;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.book-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.95em;
+  border: 2px solid var(--table-border);
+}
+.book-content table th {
+  background: var(--table-header-bg);
+  color: var(--heading-color);
+  font-weight: 700;
+  padding: 10px 12px;
+  border: 1px solid var(--table-border);
+  text-align: center;
+}
+.book-content table td {
+  padding: 8px 12px;
+  border: 1px solid var(--table-border);
+  text-align: left;
+  vertical-align: top;
+}
+.book-content table tr:nth-child(even) td { background: var(--table-stripe); }
+.book-content table tr:nth-child(odd) td { background: #fffef9; }
+
+.book-content ul, .book-content ol { margin: 12px 0 12px 2em; }
+.book-content li { margin-bottom: 6px; }
+
+.book-content img {
+  max-width: 100%; height: auto; display: block;
+  margin: 16px auto; border-radius: 2px;
+}
+
+details.collapsible-tip {
+  margin: 20px 0;
+  border: 2px solid var(--details-border);
+  border-radius: 6px;
+  background: var(--details-bg);
+  overflow: hidden;
+}
+details.collapsible-tip[open] { background: #fffdf5; }
+details.collapsible-tip > summary {
+  cursor: pointer;
+  padding: 12px 16px;
+  background: var(--details-summary-bg);
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.05em;
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+details.collapsible-tip > summary::-webkit-details-marker { display: none; }
+details.collapsible-tip > summary::before {
+  content: "\25B6";
+  display: inline-block;
+  font-size: 0.7em;
+  transition: transform 0.2s;
+  margin-right: 4px;
+}
+details.collapsible-tip[open] > summary::before { transform: rotate(90deg); }
+details.collapsible-tip > :not(summary) { padding: 8px 16px 12px; }
+
+.book-content b, .book-content strong { color: #5c3d1a; }
+.book-content i, .book-content em { color: #6b4f32; }
+.book-content u { text-decoration-color: #c4a97d; text-underline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="book-content"><h2 style="text-align:center">第一节 法的本体</h2><h3>一、法的概念</h3><p style="text-indent:2em">法是由国家制定或认可，并由国家强制力保证实施的行为规范体系。法是统治阶级意志的体现，是上层建筑的重要组成部分。</p><table border="1" cellpadding="5" cellspacing="0" width="100%">
+<tr><th width="40%">要素</th><th width="60%">含义</th></tr>
+<tr><td>国家制定</td><td>由立法机关按照法定程序创制</td></tr>
+<tr><td>国家强制力</td><td>以警察、监狱等暴力机器为后盾</td></tr>
+</table><p style="text-indent:2em">在理解法的概念时，应当注意法与道德的关系。法是最低限度的道德，而道德是更高层次的社会规范。</p><details class="collapsible-tip" open=""><summary><strong>老马识途：</strong>法律规范与道德规范的区别在于：法律规范具有国家强制性，而道德规范依靠社会舆论和内心信念来维持。在司法考试中，常以案例形式考查二者的界限。</summary><p style="text-indent:2em">法的作用可以分为规范作用和社会作用。规范作用又包括指引作用、评价作用、预测作用、教育作用和强制作用。</p></details><h3>二、法的特征</h3><p style="text-indent:2em">法具有以下基本特征：规范性、国家意志性、国家强制性、普遍性、程序性、可诉性。</p><details class="collapsible-tip" open=""><summary><b>记忆线索：</b>可用"规国强普程诉"六字口诀记忆——规（规范性）、国（国家意志性）、强（国家强制性）、普（普遍性）、程（程序性）、诉（可诉性）。</summary></details><h3>三、法的渊源</h3><p style="text-indent:2em">法的渊源是指法的外在表现形式。在当代中国，法的正式渊源包括宪法、法律、行政法规、地方性法规、规章、自治条例和单行条例等。</p><details class="collapsible-tip" open=""><summary><strong>主观点拨：</strong>在分析具体案例时，应当注意不同位阶的法律规范之间的效力层级关系。上位法优于下位法，特别法优于一般法，新法优于旧法。这三个原则的适用顺序也是考试的重点。</summary><ul>
+<li>宪法具有最高法律效力</li>
+<li>法律的效力高于行政法规</li>
+<li>行政法规的效力高于地方性法规</li>
+</ul></details><h2 style="text-align:center">第二节 法的运行</h2><h3>一、立法</h3><p style="text-indent:2em">立法是指有立法权的国家机关依照法定程序制定、修改和废止法律的活动。</p><h3>二、执法</h3><p style="text-indent:2em">执法是指国家行政机关依照法定职权和程序，贯彻执行法律的活动。</p></div>
+</body>
+</html>
